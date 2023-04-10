@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#main-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-wrapper #app-bar {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#main-wrapper #app-bar .buttons {
+    width: fit-content;
+    white-space: nowrap;
+    height: 100%;
+    display: flex;
+}
+
+#main-wrapper #app-bar .buttons button {
+    width: 40px;
+    height: 100%;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+#main-wrapper #app-bar .buttons button:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+#main-wrapper #app-bar .buttons button.close:hover {
+    background: #E81123;
+    color: white;
+}
+
+#main-wrapper #app-bar .left {
+    width: 100%;
+    height: 100%;
+    -webkit-app-region: drag;
+}
+
+
+#main-wrapper #main-content {
+    height: 100%;
+    width: 100%;
+}
