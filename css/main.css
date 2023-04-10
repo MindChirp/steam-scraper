@@ -27,17 +27,20 @@ html, body {
 }
 
 #main-wrapper #app-bar .buttons button {
-    width: 40px;
+    width: 45px;
     height: 100%;
+    font-size: 1rem;
     margin: 0;
     background: none;
     border: none;
     cursor: pointer;
-    transition: background 150ms ease-in-out, color 150ms ease-in-out;
+    transition: background 150ms ease-in-out, color 150ms ease-in-out, border-radius 170ms ease-in-out;
+    outline: none;
 }
 
 #main-wrapper #app-bar .buttons button:hover {
     background: rgba(0,0,0,0.2);
+    border-radius: 0.7rem;
 }
 
 #main-wrapper #app-bar .buttons button.close:hover {
