@@ -55,4 +55,15 @@ html, body {
 #main-wrapper #main-content {
     height: 100%;
     width: 100%;
+    
+}
+
+#main-wrapper #main-content #sidebar {
+    /* Styling for sidebar here */
+}
+
+#main-wrapper #main-content .content {
+    width: 100%;
+    height: 100%;
+    
 }

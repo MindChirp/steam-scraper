@@ -6,6 +6,7 @@ const createWindow = () => {
         width: 800,
         height: 600,
         frame: false,
+        
     })
 
     win.loadFile(path.join(__dirname, "html", "index.html"));
