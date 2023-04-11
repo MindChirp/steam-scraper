@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/search.css">
     <title>Steam scraper</title>
+    <script src="../javascripts/main.mjs" type="module"></script>
 </head>
 <body> 
     <div id="main-wrapper">
@@ -20,12 +22,13 @@
         <div id="main-content">
             <div id="sidebar">
                 <div class="buttons">
-                    <button class="search"></button>
-                    <button class="graphs"></button>
+                    <button title="Search for items" class="search selected" name="search" onclick="selectButton(this)"><img src="../images/icons/search.svg" /></button>
+                    <button title="View graphs" class="graphs" name="graphs" onclick="selectButton(this)"><img src="../images/icons/graphs.svg" /></button>
                 </div>
             </div>
             <div class="content">
-
+                <div class="graph-wrapper"></div>
+                <div class="search-wrapper show"></div>
             </div>
         </div>
     </div>
